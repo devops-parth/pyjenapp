@@ -7,7 +7,7 @@ spec:
     app: flask-test-app
   ports:
   - protocol: "TCP"
-    port: 5000
+    port: 6000
     targetPort: 5000
   type: LoadBalancer
 
@@ -28,7 +28,7 @@ spec:
     spec:
       containers:
       - name: flask-test-app
-        image: devopsparth/pythonflask
+        image: devopsparth/ppd-docker-demo:ppd-docker-demo
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 5000
